@@ -1,0 +1,32 @@
+<div class="game-results-container">
+  <div *ngIf="loading()" class="loading-spinner">
+    Loading game results...
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    {{ error }}
+  </div>
+
+  <ng-container *ngIf="!loading() && !error && finalScores.length > 0">
+    <h2>Game Over!</h2>
+    <h3>Mode: {{ gameMode | titlecase }}</h3>
+
+    <div class="final-scores">
+      <h4>Final Scores</h4>
+      <div *ngFor="let team of finalScores; let i = index" class="team-score-item"
+        [style.border-left-color]="team.color">
+        <span class="rank">{{ i + 1 }}.</span>
+        <span class="team-name">{{ team.name }}</span>
+        <span class="team-points">{{ team.puntos }} points</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="main-menu-button" (click)="goToGameSetup()">Play Again</button>
+    </div>
+  </ng-container>
+
+  <div *ngIf="!loading && !error && finalScores.length === 0" class="no-results">
+    No game results found for this ID.
+  </div>
+</div>

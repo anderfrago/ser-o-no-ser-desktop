@@ -1,0 +1,68 @@
+<div class="game-play-container">
+  <div *ngIf="loading()" class="loading-spinner">
+    Loading game..
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading() && gameState">
+    <h2>Ser o No Ser (ID: {{ gameId }})</h2>
+
+    <div class="game-content-container">
+
+
+      <div class="teams-score">
+        <h3>Scores</h3>
+        <div *ngFor="let team of gameState.teams" class="team-score-item" [style.border-left-color]="team.color"
+          [ngClass]="{ 'bg-info': team.name === gameState.teams[gameState.currentTurn].name }">
+          <span class="team-name">{{ team.name }}</span>
+          <span class="team-points"
+            [ngClass]="{ 'bg-info': team.name === gameState.teams[gameState.currentTurn].name }">{{ team.puntosPanel }}
+            points</span>
+        </div>
+      </div>
+
+      <div class="current-question" *ngIf="gameState.currentQuestion">
+        <h3>Current Question</h3>
+        <div class="question-card">
+          <div *ngIf="gameState.currentQuestion.foto != 'Sin foto'">
+            <img [src]="gameState.currentQuestion.foto" alt="Question Image" class="question-image">
+          </div>
+
+          <p class="question-title">{{ gameState.currentQuestion.titulo }}</p>
+
+          <h4>Answers:</h4>
+          <div class="answers-list">
+            <div *ngFor="let answer of gameState.currentQuestion.respuestas" class="answer-item"
+              [class.selected]="selectedAnswerId === answer.idRespuesta"
+              [ngClass]="{ 'bg-danger': answer.seleccionada && answer.valor, 'bg-success': answer.seleccionada && !answer.valor }"
+              (click)="selectAnswer(answer.idRespuesta)">
+              {{ answer.titulo }}
+              <div *ngIf="answer.foto != 'Sin foto'">
+                <img [src]="answer.foto" alt="Question Image" class="answer-image">
+              </div>
+
+            </div>
+          </div>
+
+          <button (click)="submitAnswer()" [disabled]="selectedAnswerId === null" class="submit-answer-button">
+            Submit Answer
+          </button>
+        </div>
+      </div>
+
+      <div class="game-info">
+        <p><strong>Mode:</strong> {{ gameState.mode | titlecase }}</p>
+        <p><strong>Turn:</strong> {{ gameState.teams[gameState.currentTurn].name }}</p>
+        <p><strong>Panel:</strong> {{ gameState.panelNumber }} / {{ gameState.totalPanels }}</p>
+      </div>
+    </div>
+
+    <div *ngIf="!gameState.currentQuestion" class="no-question">
+      Waiting for the next question...
+    </div>
+
+  </div>
+</div>

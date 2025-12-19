@@ -1,0 +1,84 @@
+<div class="container mt-4 card p-4 shadow">
+    <h2 class="mb-4 text-primary">Question Management</h2>
+
+    <div class="d-flex justify-content-between mb-3">
+        <div>
+            <button class="btn btn-secondary me-2" (click)="loadQuestions()">Refresh Questions</button>
+            <button class="btn btn-primary" (click)="saveAllQuestions()">Save All Questions (Overwrite)</button>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <h3 class="mb-3 text-secondary">Existing Questions</h3>
+        <div *ngIf="questions.length === 0" class="alert alert-info">No questions found.</div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Enabled</th>
+                        <th>Photo</th>
+                        <th>Answers Count</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let question of questions">
+                        <td>{{ question.titulo }}</td>
+                        <td>
+                            <span *ngIf="question.Habilitado" class="badge bg-success">Yes</span>
+                            <span *ngIf="!question.Habilitado" class="badge bg-danger">No</span>
+                        </td>
+                        <td><img *ngIf="question.foto && question.foto !== 'Sin foto'" [src]="question.foto" alt="Question Photo" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;"></td>
+                        <td>{{ question.respuestas.length }}</td>
+                        <td>
+                            <button class="btn btn-sm btn-info me-2" (click)="editQuestion(question)">Edit</button>
+                            <button class="btn btn-sm btn-danger" (click)="deleteQuestion(question.idPregunta)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card p-4 shadow">
+        <h3 class="mb-3 text-secondary">{{ editingQuestionId ? 'Edit Question' : 'Add New Question' }}</h3>
+        <form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Title:</label>
+                <input type="text" id="titulo" formControlName="titulo" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="foto" class="form-label">Photo URL:</label>
+                <input type="text" id="foto" formControlName="foto" class="form-control">
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" id="Habilitado" formControlName="Habilitado" class="form-check-input">
+                <label for="Habilitado" class="form-check-label">Enabled</label>
+            </div>
+
+            <h4 class="mt-4 mb-3 text-secondary">Answers:</h4>
+            <div formArrayName="respuestas">
+                <div *ngFor="let respuestaGroup of respuestas.controls; let i = index" [formGroupName]="i" class="card mb-3 p-3 shadow-sm">
+                    <div class="mb-2">
+                        <input type="text" formControlName="titulo" placeholder="Answer Title" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" formControlName="foto" placeholder="Answer Photo URL" class="form-control">
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" formControlName="valor" class="form-check-input">
+                        <label class="form-check-label">Is Incorrect (true=incorrect, false=correct)</label>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-danger" (click)="removeRespuesta(i)">Remove</button>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-primary mb-3" (click)="addRespuesta()">Add Answer</button>
+
+            <div class="d-flex justify-content-start mt-3">
+                <button type="submit" class="btn btn-success me-2" [disabled]="questionForm.invalid">{{ editingQuestionId ? 'Update Question' : 'Add Question' }}</button>
+                <button type="button" class="btn btn-outline-secondary" (click)="resetForm()">{{ editingQuestionId ? 'Cancel Edit' : 'Clear Form' }}</button>
+            </div>
+        </form>
+    </div>
+</div>

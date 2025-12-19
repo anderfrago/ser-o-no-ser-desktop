@@ -1,0 +1,24 @@
+<div class="question-list-container">
+  <h2>Question List</h2>
+
+  <div *ngIf="loading" class="loading-spinner">
+    Loading questions...
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    {{ error }}
+  </div>
+
+  <ul *ngIf="!loading && !error && questions.length > 0" class="question-items">
+    <li *ngFor="let question of questions" class="question-item">
+      <h3>{{ question.titulo }}</h3>
+      <p>ID: {{ question.idPregunta }}</p>
+      <p>Habilitado: {{ question.Habilitado ? 'Yes' : 'No' }}</p>
+      <!-- Add more details as needed -->
+    </li>
+  </ul>
+
+  <div *ngIf="!loading && !error && questions.length === 0" class="no-questions">
+    No questions found.
+  </div>
+</div>

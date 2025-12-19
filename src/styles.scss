@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Import Bootstrap functions
+@import "bootstrap/scss/functions";
+
+// Define custom primary color
+$primary: #0f4183;
+
+// Import Bootstrap variables
+@import "bootstrap/scss/variables";
+
+// Import the rest of Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
