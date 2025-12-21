@@ -15,6 +15,7 @@ export class GamePlayComponent implements OnInit {
   gameId: string | null = null;
   gameState: GameState | null = null;
   loading = signal(false);
+  isSubmitting = signal(false);
   error: string | null = null;
   selectedAnswerId: string | null = null;
 
@@ -66,17 +67,29 @@ export class GamePlayComponent implements OnInit {
       return;
     }
 
-    this.gameService.submitAnswer(this.gameId, this.selectedAnswerId).subscribe({
-      next: (response) => {
+    this.isSubmitting.set(true);
+
+    // Call service immediately but wait at least 3 seconds to show result
+    const minDelay$ = new Promise(resolve => setTimeout(resolve, 3000));
+    const submit$ = this.gameService.submitAnswer(this.gameId, this.selectedAnswerId).toPromise();
+
+    Promise.all([minDelay$, submit$])
+      .then(([_, response]) => {
         console.log('Answer submitted:', response);
         this.selectedAnswerId = null; // Reset selection
         this.fetchGameState(); // Refresh game state
-        // Optionally, check response.nextTurn to navigate or end game
-      },
-      error: (err) => {
+        this.isSubmitting.set(false);
+      })
+      .catch(err => {
         console.error('Error submitting answer', err);
         this.error = 'Failed to submit answer. Try again.';
-      }
-    });
+        this.isSubmitting.set(false);
+      });
+  }
+
+  viewScores(): void {
+    if (this.gameId) {
+      this.router.navigate(['/game-results', this.gameId], { queryParams: { returnToGame: true } });
+    }
   }
 }

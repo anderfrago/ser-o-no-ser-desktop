@@ -17,7 +17,8 @@
     "files": [
       "dist/**/*",
       "main.js",
-      "package.json"
+      "package.json",
+      "api/**/*"
     ],
     "directories": {
       "output": "release"
@@ -60,7 +61,6 @@
     "jsdom": "^27.1.0",
     "ngx-electron": "^2.2.0",
     "typescript": "~5.9.2",
-    "vitest": "^4.0.8",
-    "electron-builder": "^24.13.5"
+    "vitest": "^4.0.8"
   }
 }

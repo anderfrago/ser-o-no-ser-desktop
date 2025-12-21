@@ -2,8 +2,36 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
-let { questions } = require('./data'); // Use 'let' because we will reassign it
+// Use 'let' because we will reassign it
+let { questions: initialQuestions } = require('./data');
+let questions = [];
+
 const { v4: uuidv4 } = require('uuid'); // Import UUID generator
+
+const DATA_STORAGE_PATH = process.env.DATA_STORAGE_PATH || __dirname;
+const DATA_FILE_PATH = path.join(DATA_STORAGE_PATH, 'questions.json');
+
+// Initialize questions
+if (fs.existsSync(DATA_FILE_PATH)) {
+    try {
+        const fileContent = fs.readFileSync(DATA_FILE_PATH, 'utf8');
+        questions = JSON.parse(fileContent);
+        console.log('Loaded questions from:', DATA_FILE_PATH);
+    } catch (err) {
+        console.error('Failed to load questions from file, falling back to default data:', err);
+        questions = [...initialQuestions];
+    }
+} else {
+    console.log('No existing data file found. Using default data.');
+    questions = [...initialQuestions];
+    // Optionally create the file immediately so it exists
+    try {
+        fs.writeFileSync(DATA_FILE_PATH, JSON.stringify(questions, null, 2), 'utf8');
+        console.log('Created initial data file at:', DATA_FILE_PATH);
+    } catch (err) {
+        console.error('Failed to create initial data file:', err);
+    }
+}
 
 const app = express();
 const port = 3000;
@@ -23,17 +51,19 @@ function shuffle(array) {
     return array;
 }
 
-// Helper function to write the questions array back to data.js
+// Helper function to write the questions array back to questions.json
 async function writeDataFile(updatedQuestions) {
-    const dataPath = path.join(__dirname, 'data.js');
-    const fileContent = `const questions = ${JSON.stringify(updatedQuestions, null, 2)};\n\nmodule.exports = { questions };`;
-    
     try {
-        await fs.promises.writeFile(dataPath, fileContent, 'utf8');
+        await fs.promises.writeFile(DATA_FILE_PATH, JSON.stringify(updatedQuestions, null, 2), 'utf8');
         questions = updatedQuestions; // Update the in-memory questions array
         return true;
     } catch (err) {
-        console.error('Failed to save data.js:', err);
+        console.error('Failed to save data file:', err);
+        try {
+            fs.appendFileSync(path.join(DATA_STORAGE_PATH, 'error.log'), `[${new Date().toISOString()}] Failed to save data: ${err.message}\n${err.stack}\n`);
+        } catch (logErr) {
+            console.error('Failed to write to error log:', logErr);
+        }
         return false;
     }
 }
@@ -156,7 +186,7 @@ app.put('/api/questions/:id', async (req, res) => {
         respuestas: respuestas.map(r => {
             // Use existing ID if present, otherwise generate new UUID for answer
             return {
-                idRespuesta: r.idRespuesta || uuidv4(), 
+                idRespuesta: r.idRespuesta || uuidv4(),
                 titulo: r.titulo,
                 valor: r.valor,
                 foto: r.foto || 'Sin foto',
@@ -326,17 +356,17 @@ app.post('/api/game/:gameId/answer', (req, res) => {
 
     const currentQuestionId = game.questionIds[game.currentQuestionIndex];
     const question = questions.find(q => (q.idPregunta === currentQuestionId || q.IdPregunta === currentQuestionId));
-    
+
     if (!question) {
         return res.status(500).send('Current question not found in data.');
     }
 
     const answer = question.respuestas.find(r => (r.idRespuesta === answerId || r.IdRespuesta === answerId));
-    
+
     if (!answer) {
         return res.status(404).send('Answer not found.');
     }
-    
+
     // Mark answer as selected for this game instance (in-memory)
     const answerInQuestion = question.respuestas.find(r => (r.idRespuesta === answerId || r.IdRespuesta === answerId));
     if (answerInQuestion) {

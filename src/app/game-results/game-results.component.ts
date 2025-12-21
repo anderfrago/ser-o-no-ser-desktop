@@ -17,6 +17,7 @@ export class GameResultsComponent implements OnInit {
   loading = signal(false);
   error: string | null = null;
   gameMode: string = ''; // To display the game mode in results
+  returnToGame = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -32,6 +33,10 @@ export class GameResultsComponent implements OnInit {
       this.error = 'No game ID provided to display results.';
       this.loading.set(false);
     }
+
+    this.route.queryParams.subscribe(params => {
+      this.returnToGame = params['returnToGame'] === 'true';
+    });
   }
 
   fetchGameResults(): void {
@@ -55,5 +60,11 @@ export class GameResultsComponent implements OnInit {
 
   goToGameSetup(): void {
     this.router.navigate(['/game-setup']);
+  }
+
+  goBackToGame(): void {
+    if (this.gameId) {
+      this.router.navigate(['/game', this.gameId]);
+    }
   }
 }

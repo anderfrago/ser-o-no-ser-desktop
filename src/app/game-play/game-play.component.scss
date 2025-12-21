@@ -214,3 +214,76 @@ h3 {
   background-color: #17a2b8;
   color: white;
 }
+
+.suspense-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bgPulse 1s infinite alternate;
+  color: white;
+
+  .suspense-content {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .icons-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    i {
+      font-size: 8rem;
+      grid-area: 1 / 1;
+
+      &.true-icon {
+        color: #fff;
+        animation: toggleVisibility 0.8s infinite;
+      }
+
+      &.false-icon {
+        color: #fff;
+        animation: toggleVisibility 0.8s infinite reverse;
+      }
+    }
+  }
+}
+
+@keyframes bgPulse {
+  0% {
+    background-color: #28a745; // Green
+  }
+
+  100% {
+    background-color: #dc3545; // Red
+  }
+}
+
+@keyframes toggleVisibility {
+  0% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const url = require('url');
-const { spawn } = require('child_process');
+const { fork } = require('child_process');
 
 let win;
 let apiProcess; // To hold the API child process
@@ -33,7 +33,7 @@ function createWindow() {
   win.loadURL(appURL);
 
   // Open the DevTools.
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 
   win.on('closed', () => {
     win = null;
@@ -41,9 +41,12 @@ function createWindow() {
 }
 
 app.on('ready', () => {
-  apiProcess = spawn('node', [API_PATH], {
-    env: { ...process.env, PORT: API_PORT },
-    stdio: 'inherit' // This pipes stdout/stderr to the Electron app's console
+  const DATA_STORAGE_PATH = app.isPackaged
+    ? path.dirname(app.getPath('exe'))
+    : __dirname;
+
+  apiProcess = fork(API_PATH, [], {
+    env: { ...process.env, PORT: API_PORT, DATA_STORAGE_PATH },
   });
 
   apiProcess.on('error', (err) => {
@@ -55,7 +58,7 @@ app.on('ready', () => {
   });
 
   // Give the API a moment to start before loading the window
-  setTimeout(createWindow, 2000); 
+  setTimeout(createWindow, 2000);
 });
 
 app.on('window-all-closed', () => {

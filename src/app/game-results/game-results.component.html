@@ -8,7 +8,8 @@
   </div>
 
   <ng-container *ngIf="!loading() && !error && finalScores.length > 0">
-    <h2>Game Over!</h2>
+    <h2 *ngIf="!returnToGame">Game Over!</h2>
+    <h2 *ngIf="returnToGame">Current Scores</h2>
     <h3>Mode: {{ gameMode | titlecase }}</h3>
 
     <div class="final-scores">
@@ -22,6 +23,7 @@
     </div>
 
     <div class="actions">
+      <button *ngIf="returnToGame" class="back-to-game-button" (click)="goBackToGame()">Back to Game</button>
       <button class="main-menu-button" (click)="goToGameSetup()">Play Again</button>
     </div>
   </ng-container>

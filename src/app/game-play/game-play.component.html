@@ -1,4 +1,13 @@
 <div class="game-play-container">
+  <div *ngIf="isSubmitting()" class="suspense-overlay">
+    <div class="suspense-content">
+      <div class="icons-container">
+        <i class="bi bi-check-circle-fill true-icon"></i>
+        <i class="bi bi-x-circle-fill false-icon"></i>
+      </div>
+      <h2>Checking Answer...</h2>
+    </div>
+  </div>
   <div *ngIf="loading()" class="loading-spinner">
     Loading game..
   </div>
@@ -8,7 +17,8 @@
   </div>
 
   <div *ngIf="!loading() && gameState">
-    <h2>Ser o No Ser (ID: {{ gameId }})</h2>
+    <!-- <h2>Ser o No Ser (ID: {{ gameId }})
+    </h2> -->
 
     <div class="game-content-container">
 
@@ -22,6 +32,7 @@
             [ngClass]="{ 'bg-info': team.name === gameState.teams[gameState.currentTurn].name }">{{ team.puntosPanel }}
             points</span>
         </div>
+        <button class="btn btn-sm btn-outline-primary ms-3" (click)="viewScores()">View Scores</button>
       </div>
 
       <div class="current-question" *ngIf="gameState.currentQuestion">

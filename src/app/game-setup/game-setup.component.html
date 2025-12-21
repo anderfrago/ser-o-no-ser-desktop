@@ -17,7 +17,8 @@
           <label for="teamColor-{{i}}">Team Color:</label>
           <input id="teamColor-{{i}}" type="color" formControlName="color">
         </div>
-        <button type="button" (click)="removeTeam(i)" *ngIf="teams.length > 1" class="remove-button">Remove Team</button>
+        <button type="button" (click)="removeTeam(i)" *ngIf="teams.length > 1" class="remove-button">Remove
+          Team</button>
       </div>
       <button type="button" (click)="addTeam()" class="add-button">Add Team</button>
     </div>
