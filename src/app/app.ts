@@ -10,7 +10,6 @@ import { ElectronService } from 'ngx-electron'; // Import ElectronService
 })
 export class App {
   protected readonly title = signal('ser-o-no-ser-ng');
-  protected readonly year = new Date().getFullYear();
 
   constructor(private _electronService: ElectronService) {
     console.log('AppComponent constructor called!');
