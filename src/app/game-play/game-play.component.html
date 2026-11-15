@@ -37,15 +37,18 @@
 
       <div class="current-question" *ngIf="gameState.currentQuestion">
         <div class="question-card">
+          <div class="answers-list">
           <div class="question-heading">
           <div *ngIf="gameState.currentQuestion.foto != 'Sin foto'">
             <img [src]="gameState.currentQuestion.foto" alt="Question Image" class="question-image">
           </div>
 
           <p class="question-title">{{ gameState.currentQuestion.titulo }}</p>
+          <button (click)="submitAnswer()" [disabled]="selectedAnswerId === null" class="submit-answer-button">
+            Submit Answer
+          </button>
           </div>
 
-          <div class="answers-list">
             <div *ngFor="let answer of gameState.currentQuestion.respuestas" class="answer-item"
               [class.selected]="selectedAnswerId === answer.idRespuesta"
               [ngClass]="{ 'bg-danger': answer.seleccionada && answer.valor, 'bg-success': answer.seleccionada && !answer.valor }"
@@ -58,9 +61,6 @@
             </div>
           </div>
 
-          <button (click)="submitAnswer()" [disabled]="selectedAnswerId === null" class="submit-answer-button">
-            Submit Answer
-          </button>
         </div>
       </div>
 
