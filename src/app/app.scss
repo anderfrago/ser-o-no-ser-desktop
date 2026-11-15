@@ -5,6 +5,7 @@
 }
 
 header {
+  background-color: #0f3f7f;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -22,7 +23,7 @@ main {
 nav {
   padding: 6px 10px;
   background-color: #ffffff;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: none;
   display: flex;
   gap: 12px;
 }
