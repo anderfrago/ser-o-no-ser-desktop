@@ -1,16 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-// Import Bootstrap functions
-@import "bootstrap/scss/functions";
-
-// Define custom primary color
-$primary: #0f4183;
-
-// Import Bootstrap variables
-@import "bootstrap/scss/variables";
-
-// Import the rest of Bootstrap
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap" with (
+    $primary: #0f4183
+);
 
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -19,16 +11,12 @@ body {
 body {
     min-height: 100vh;
     margin: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
 }
 
 header {
-    min-height: 50px;
     background: white;
 }
 
 footer {
-    min-height: 50px;
     background: white;
 }

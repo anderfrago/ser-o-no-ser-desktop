@@ -1,90 +1,458 @@
 [
   {
-    "idPregunta": "a1a1a1a1-a1a1-4a1a-8a1a-a1a1a1a1a1a1",
-    "titulo": "¿Cuáles de los siguientes son mamíferos?",
-    "Habilitado": true,
-    "foto": "https://www.mundomar.es/wp-content/uploads/2019/12/collage-mamiferos-cabecera.jpg",
+    "idPregunta": "1",
+    "titulo": "Pueblos de Navarra",
+    "Habilitado": false,
+    "foto": "fotos/Escudo.png",
     "respuestas": [
       {
-        "idRespuesta": "b1b1b1b1-b1b1-4b1b-8b1b-b1b1b1b1b1b1",
-        "titulo": "Perro",
-        "valor": false,
-        "foto": "https://www.mundomar.es/wp-content/uploads/2019/12/collage-mamiferos-cabecera.jpg",
-        "seleccionada": false
-      },
-      {
-        "idRespuesta": "b2b2b2b2-b2b2-4b2b-8b2b-b2b2b2b2b2b2",
-        "titulo": "Gato",
+        "idRespuesta": "mdb-1-1",
+        "titulo": "Castillonuevo",
         "valor": false,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "b3b3b3b3-b3b3-4b3b-8b3b-b3b3b3b3b3b3",
-        "titulo": "Elefante",
+        "idRespuesta": "mdb-1-2",
+        "titulo": "Azuelo",
         "valor": false,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "b4b4b4b4-b4b4-4b4b-8b4b-b4b4b4b4b4b4",
-        "titulo": "Ballena",
-        "valor": false,
-        "foto": "Sin foto",
-        "seleccionada": false
-      },
-      {
-        "idRespuesta": "b5b5b5b5-b5b5-4b5b-8b5b-b5b5b5b5b5b5",
-        "titulo": "Murciélago",
-        "valor": false,
-        "foto": "Sin foto",
-        "seleccionada": false
-      },
-      {
-        "idRespuesta": "b6b6b6b6-b6b6-4b6b-8b6b-b6b6b6b6b6b6",
-        "titulo": "Delfín",
-        "valor": false,
-        "foto": "Sin foto",
-        "seleccionada": false
-      },
-      {
-        "idRespuesta": "b7b7b7b7-b7b7-4b7b-8b7b-b7b7b7b7b7b7",
-        "titulo": "Humano",
-        "valor": false,
-        "foto": "Sin foto",
-        "seleccionada": false
-      },
-      {
-        "idRespuesta": "b8b8b8b8-b8b8-4b8b-8b8b-b8b8b8b8b8b8",
-        "titulo": "Ornitorrinco",
-        "valor": false,
-        "foto": "Sin foto",
-        "seleccionada": false
-      },
-      {
-        "idRespuesta": "b9b9b9b9-b9b9-4b9b-8b9b-b9b9b9b9b9b9",
-        "titulo": "Pingüino",
+        "idRespuesta": "mdb-1-3",
+        "titulo": "Lezo",
         "valor": true,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "b0b0b0b0-b0b0-4b0b-8b0b-b0b0b0b0b0b0",
-        "titulo": "Tiburón",
+        "idRespuesta": "mdb-1-4",
+        "titulo": "Peñacerrada",
         "valor": true,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "c0c0c0c0-c0c0-4c0c-8c0c-c0c0c0c0c0c0",
-        "titulo": "Águila",
+        "idRespuesta": "mdb-1-5",
+        "titulo": "Goizueta",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-1-6",
+        "titulo": "Barañáin",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-1-7",
+        "titulo": "Sada",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-1-8",
+        "titulo": "Navarrete",
         "valor": true,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "c2c2c2c2-c2c2-4c2c-8c2c-c2c2c2c2c2c2",
-        "titulo": "Cocodrilo",
+        "idRespuesta": "mdb-1-9",
+        "titulo": "Aria",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-1-10",
+        "titulo": "Nazar",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-1-11",
+        "titulo": "Graus",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-1-12",
+        "titulo": "Donamariacas",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "2",
+    "titulo": "Bandera - País",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-2-1",
+        "titulo": "Mali",
+        "valor": true,
+        "foto": "fotos/Guinea-Bandera-Africa.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-2",
+        "titulo": "Polonia",
+        "valor": true,
+        "foto": "fotos/M%C3%B3naco-Bandera-Europa.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-3",
+        "titulo": "Palaos",
+        "valor": false,
+        "foto": "fotos/Palaos-Bandera-Ocean%C3%ADa.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-4",
+        "titulo": "Santa Lucía",
+        "valor": false,
+        "foto": "fotos/Santa-Luc%C3%ADa-Bandera-America.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-5",
+        "titulo": "Zimbaue",
+        "valor": true,
+        "foto": "fotos/Mozambique-Bandera-Africa.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-6",
+        "titulo": "Sychelles",
+        "valor": false,
+        "foto": "fotos/Seychelles-Bandera-Africa.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-7",
+        "titulo": "Mexico",
+        "valor": true,
+        "foto": "fotos/Italia-Bandera-Europa.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-8",
+        "titulo": "Palestina",
+        "valor": false,
+        "foto": "fotos/Palestina-Bandera-Asia.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-9",
+        "titulo": "Honduras",
+        "valor": false,
+        "foto": "fotos/Honduras-Bandera-America.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-10",
+        "titulo": "Trinidad y Tobago",
+        "valor": false,
+        "foto": "fotos/Trinidad-y-Tobago-Bandera-America.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-11",
+        "titulo": "Vanuatu",
+        "valor": false,
+        "foto": "fotos/Vanuatu-Bandera-Ocean%C3%ADa.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-2-12",
+        "titulo": "Vaticano",
+        "valor": false,
+        "foto": "fotos/Vaticano-Bandera-Europa.png",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "3",
+    "titulo": "Mujeres ganadoras del premio Nobel",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-3-1",
+        "titulo": "Marie Curie",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-2",
+        "titulo": "Bertha von Suttner",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-3",
+        "titulo": "Selma Lagerlof",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-4",
+        "titulo": "Esther Montineli",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-5",
+        "titulo": "Sofia Masrign",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-6",
+        "titulo": "Grazia Deledda",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-7",
+        "titulo": "Sigrid Undset",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-8",
+        "titulo": "Ellen Johnson-Sirleaf",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-9",
+        "titulo": "Sigrid Stugard",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-10",
+        "titulo": "Bertha Lagerlof",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-11",
+        "titulo": "Malala Yousafzai",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-3-12",
+        "titulo": "Svetlana Aleksievich",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "4",
+    "titulo": "Tipos de pasta",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-4-1",
+        "titulo": "Spaghetti",
+        "valor": false,
+        "foto": "fotos/sp2.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-2",
+        "titulo": "Tagliatelle",
+        "valor": false,
+        "foto": "fotos/sp3.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-3",
+        "titulo": "Barrichelli",
+        "valor": true,
+        "foto": "fotos/sp11.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-4",
+        "titulo": "Fusilli",
+        "valor": false,
+        "foto": "fotos/sp4.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-5",
+        "titulo": "Tortellini",
+        "valor": false,
+        "foto": "fotos/sp5.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-6",
+        "titulo": "Boccherini",
+        "valor": true,
+        "foto": "fotos/sp12.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-7",
+        "titulo": "Caneloni",
+        "valor": false,
+        "foto": "fotos/sp6.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-8",
+        "titulo": "Pandolfini",
+        "valor": true,
+        "foto": "fotos/sp13.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-9",
+        "titulo": "Radiatori",
+        "valor": false,
+        "foto": "fotos/sp7.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-10",
+        "titulo": "Fetuccini",
+        "valor": false,
+        "foto": "fotos/sp8.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-11",
+        "titulo": "Panini",
+        "valor": true,
+        "foto": "fotos/sp9.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-4-12",
+        "titulo": "Orecchiette",
+        "valor": false,
+        "foto": "fotos/sp10.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "5",
+    "titulo": "Tipos de sombrero",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-5-1",
+        "titulo": "Hongo",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-2",
+        "titulo": "De copa",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-3",
+        "titulo": "Fez",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-4",
+        "titulo": "Malagueño",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-5",
+        "titulo": "Pamela",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-6",
+        "titulo": "Jipijapa",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-7",
+        "titulo": "Volatín",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-8",
+        "titulo": "Alado",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-9",
+        "titulo": "Canotier",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-10",
+        "titulo": "Salacot",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-11",
+        "titulo": "Cordobés",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-5-12",
+        "titulo": "Caliqueño",
         "valor": true,
         "foto": "Sin foto",
         "seleccionada": false
@@ -92,93 +460,2209 @@
     ]
   },
   {
-    "idPregunta": "d1d1d1d1-d1d1-4d1d-8d1d-d1d1d1d1d1d1",
-    "titulo": "¿Qué países se encuentran en América del Sur?",
+    "idPregunta": "6",
+    "titulo": "\"Gracias\" en distintos idiomas",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-6-1",
+        "titulo": "Obrigado (portugués)",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-2",
+        "titulo": "Gràcies (catalán)",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-3",
+        "titulo": "Graciñas (gallego)",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-4",
+        "titulo": "Gracelós (griego)",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-5",
+        "titulo": "Tak (danés)",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-6",
+        "titulo": "Dankon (esperanto)",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-7",
+        "titulo": "Arigato (chino)",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-8",
+        "titulo": "Grazie (italiano)",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-9",
+        "titulo": "Tesekkur ederim (turco)",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-10",
+        "titulo": "Ngiyabonga (zulú)",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-11",
+        "titulo": "Traipacá (azteca)",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-6-12",
+        "titulo": "Xièxie (japonés)",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "7",
+    "titulo": "Madre en diferentes idiomas",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-7-1",
+        "titulo": "Mère-francés",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-2",
+        "titulo": "Mother-inglés",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-3",
+        "titulo": "Mutter-alemán",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-4",
+        "titulo": "Moder-sueco",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-5",
+        "titulo": "Mae-rumano",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-6",
+        "titulo": "Nënë-danés",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-7",
+        "titulo": "Anne-turco",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-8",
+        "titulo": "Matka-gallego",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-9",
+        "titulo": "Emä-finlandés",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-10",
+        "titulo": "Mare-catalán",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-11",
+        "titulo": "Madre-italiano",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-7-12",
+        "titulo": "Amacho-euskera",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "8",
+    "titulo": "Enfermedades de transmisión sexual (ETS)",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-8-1",
+        "titulo": "Clamidia",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-2",
+        "titulo": "VIH/sida",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-3",
+        "titulo": "Fimosis",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-4",
+        "titulo": "Hepatitis viral",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-5",
+        "titulo": "Sífilis",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-6",
+        "titulo": "Herpes Genial",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-7",
+        "titulo": "LGV",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-8",
+        "titulo": "Gonorrea",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-9",
+        "titulo": "VAT",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-10",
+        "titulo": "Escabiosis o sarna",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-11",
+        "titulo": "Tricomoniasis",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-8-12",
+        "titulo": "Vaginosis Metrónida",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "9",
+    "titulo": "En castellano palabras con uve",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-9-1",
+        "titulo": "vaibén",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-2",
+        "titulo": "veato",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-3",
+        "titulo": "civilidad",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-4",
+        "titulo": "hervir",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-5",
+        "titulo": "caver",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-6",
+        "titulo": "precaver",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-7",
+        "titulo": "víbora",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-8",
+        "titulo": "tuve",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-9",
+        "titulo": "longevo",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-10",
+        "titulo": "nuve",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-11",
+        "titulo": "nieve",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-9-12",
+        "titulo": "estuve",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "10",
+    "titulo": "Fobias",
     "Habilitado": true,
     "foto": "Sin foto",
     "respuestas": [
       {
-        "idRespuesta": "e1e1e1e1-e1e1-4e1e-8e1e-e1e1e1e1e1e1",
-        "titulo": "Argentina",
+        "idRespuesta": "mdb-10-1",
+        "titulo": "Triscaidecafobia-al 13",
         "valor": false,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "e2e2e2e2-e2e2-4e2e-8e2e-e2e2e2e2e2e2",
-        "titulo": "Brasil",
+        "idRespuesta": "mdb-10-2",
+        "titulo": "Xenofobia-a los extranjeros",
         "valor": false,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "e3e3e3e3-e3e3-4e3e-8e3e-e3e3e3e3e3e3",
+        "idRespuesta": "mdb-10-3",
+        "titulo": "Sociofobia-a la sociedad",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-4",
+        "titulo": "Claustrofobia-a los sitios cerrados",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-5",
+        "titulo": "Inforfobia-al exceso de información",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-6",
+        "titulo": "Agorafobia-a los espacios abiertos",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-7",
+        "titulo": "Entomofobia-a los insectos",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-8",
+        "titulo": "Oceanofobia-al aislamiento en el mar",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-9",
+        "titulo": "Cristianofobia-a los cristianos",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-10",
+        "titulo": "Fobofobia-al miedo",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-11",
+        "titulo": "Efebofobia-a los jóvenes",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-10-12",
+        "titulo": "Quimiofobia-a las sustancias con sabor natural",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "11",
+    "titulo": "Tipos de \"barcos\"",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-11-1",
+        "titulo": "Carraca",
+        "valor": false,
+        "foto": "fotos/BA2.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-2",
+        "titulo": "Nao",
+        "valor": false,
+        "foto": "fotos/BA3.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-3",
+        "titulo": "Galera",
+        "valor": false,
+        "foto": "fotos/BA4.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-4",
+        "titulo": "Bajel",
+        "valor": false,
+        "foto": "fotos/BA5.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-5",
+        "titulo": "Corbeta",
+        "valor": false,
+        "foto": "fotos/BA6.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-6",
+        "titulo": "Calavera",
+        "valor": true,
+        "foto": "fotos/BA7.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-7",
+        "titulo": "Cliper",
+        "valor": false,
+        "foto": "fotos/BA8.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-8",
+        "titulo": "Cortmorán",
+        "valor": true,
+        "foto": "fotos/BA9.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-9",
+        "titulo": "Paquebote",
+        "valor": false,
+        "foto": "fotos/BA10.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-10",
+        "titulo": "Estribo",
+        "valor": true,
+        "foto": "fotos/BA11.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-11",
+        "titulo": "Catamarán",
+        "valor": false,
+        "foto": "fotos/BA12.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-11-12",
+        "titulo": "Mesana",
+        "valor": true,
+        "foto": "fotos/BA13.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "12",
+    "titulo": "Verbos irregulares en inglés",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-12-1",
+        "titulo": "to know",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-2",
+        "titulo": "to fall",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-3",
+        "titulo": "to cry",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-4",
+        "titulo": "to create",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-5",
+        "titulo": "to feel",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-6",
+        "titulo": "to lie",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-7",
+        "titulo": "to lay",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-8",
+        "titulo": "to stop",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-9",
+        "titulo": "to show",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-10",
+        "titulo": "to pay",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-11",
+        "titulo": "to stay",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-12-12",
+        "titulo": "to bring",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "13",
+    "titulo": "Verdades sobre el elefante",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-13-1",
+        "titulo": "El mastodonte fue su representante primitivo",
+        "valor": false,
+        "foto": "fotos/el2.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-2",
+        "titulo": "Su gestación dura 16 meses",
+        "valor": true,
+        "foto": "fotos/el3.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-3",
+        "titulo": "El africano mide unos 4 m",
+        "valor": false,
+        "foto": "fotos/el4.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-4",
+        "titulo": "La trompa percibe olores y sabores",
+        "valor": false,
+        "foto": "fotos/el5.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-5",
+        "titulo": "Salta más de ½ metro",
+        "valor": true,
+        "foto": "fotos/el6.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-6",
+        "titulo": "Esperanza de vida 65 años",
+        "valor": false,
+        "foto": "fotos/el7.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-7",
+        "titulo": "Cambia de dentadura 2 veces",
+        "valor": false,
+        "foto": "fotos/el8.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-8",
+        "titulo": "Los asiáticos tienen las orejas grandes",
+        "valor": true,
+        "foto": "fotos/el9.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-9",
+        "titulo": "Puede llegar a los 40 km/h",
+        "valor": false,
+        "foto": "fotos/el10.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-10",
+        "titulo": "Rebaños conducidos por una hembra",
+        "valor": false,
+        "foto": "fotos/el11.png",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-11",
+        "titulo": "Sólo las hembras tienen colmillos",
+        "valor": true,
+        "foto": "fotos/el12.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-13-12",
+        "titulo": "Pare entre 5 y 12 crías",
+        "valor": false,
+        "foto": "fotos/el13.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "14",
+    "titulo": "Son vecinos",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-14-1",
+        "titulo": "Cáceres-Toledo",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-2",
+        "titulo": "Palencia-Asturias",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-3",
+        "titulo": "Cádiz-Sevilla",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-4",
+        "titulo": "Huesca-Teruel",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-5",
+        "titulo": "Albacete-Ciudad Real",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-6",
+        "titulo": "Zaragoza-Soria",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-7",
+        "titulo": "Madrid-Cuenca",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-8",
+        "titulo": "Toledo-Segovia",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-9",
+        "titulo": "Almería-Murcia",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-10",
+        "titulo": "Zamora-Ourense",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-11",
+        "titulo": "Málaga-Jaén",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-14-12",
+        "titulo": "Teruel-Castellón",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "15",
+    "titulo": "¿Cual de estos países limita con Brasil?",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-15-1",
+        "titulo": "Panamá",
+        "valor": true,
+        "foto": "fotos/panama.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-15-2",
+        "titulo": "Peru",
+        "valor": false,
+        "foto": "fotos/peru.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-15-3",
         "titulo": "Colombia",
         "valor": false,
-        "foto": "Sin foto",
+        "foto": "fotos/colombia.jpg",
         "seleccionada": false
       },
       {
-        "idRespuesta": "e4e4e4e4-e4e4-4e4e-8e4e-e4e4e4e4e4e4",
-        "titulo": "Perú",
-        "valor": false,
-        "foto": "Sin foto",
-        "seleccionada": false
-      },
-      {
-        "idRespuesta": "e5e5e5e5-e5e5-4e5e-8e5e-e5e5e5e5e5e5",
+        "idRespuesta": "mdb-15-4",
         "titulo": "Chile",
-        "valor": false,
-        "foto": "Sin foto",
+        "valor": true,
+        "foto": "fotos/chile.jpg",
         "seleccionada": false
       },
       {
-        "idRespuesta": "e6e6e6e6-e6e6-4e6e-8e6e-e6e6e6e6e6e6",
-        "titulo": "Ecuador",
-        "valor": false,
-        "foto": "Sin foto",
+        "idRespuesta": "mdb-15-5",
+        "titulo": "Belice",
+        "valor": true,
+        "foto": "fotos/belice.jpg",
         "seleccionada": false
       },
       {
-        "idRespuesta": "e7e7e7e7-e7e7-4e7e-8e7e-e7e7e7e7e7e7",
-        "titulo": "Venezuela",
-        "valor": false,
-        "foto": "Sin foto",
-        "seleccionada": false
-      },
-      {
-        "idRespuesta": "e8e8e8e8-e8e8-4e8e-8e8e-e8e8e8e8e8e8",
+        "idRespuesta": "mdb-15-6",
         "titulo": "Uruguay",
         "valor": false,
+        "foto": "fotos/uruguay.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-15-7",
+        "titulo": "Surinam",
+        "valor": false,
+        "foto": "fotos/surinam.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-15-8",
+        "titulo": "Paraguay",
+        "valor": false,
+        "foto": "fotos/paraguay.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-15-9",
+        "titulo": "Bolivia",
+        "valor": false,
+        "foto": "fotos/Bolivia.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-15-10",
+        "titulo": "Venezuela",
+        "valor": false,
+        "foto": "fotos/venezuela.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-15-11",
+        "titulo": "Guyana",
+        "valor": false,
+        "foto": "fotos/guyana.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-15-12",
+        "titulo": "Nicaragua",
+        "valor": true,
+        "foto": "fotos/nicaragua.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "16",
+    "titulo": "¿Cual de estas películas son de PIXAR animation Studio?",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-16-1",
+        "titulo": "Toy Story",
+        "valor": false,
+        "foto": "fotos/toystory.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-2",
+        "titulo": "Shrek",
+        "valor": true,
+        "foto": "fotos/shrek.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-3",
+        "titulo": "Buscando a Nemo",
+        "valor": false,
+        "foto": "fotos/nemo.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-4",
+        "titulo": "Monstruos S.A.",
+        "valor": false,
+        "foto": "fotos/monstruos.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-5",
+        "titulo": "Madagascar",
+        "valor": true,
+        "foto": "fotos/madagascar.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-6",
+        "titulo": "Los Increibles",
+        "valor": false,
+        "foto": "fotos/increibles.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-7",
+        "titulo": "Cars",
+        "valor": false,
+        "foto": "fotos/cars.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-8",
+        "titulo": "Up",
+        "valor": false,
+        "foto": "fotos/up.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-9",
+        "titulo": "Kung Fu Panda",
+        "valor": true,
+        "foto": "fotos/kungfu.jpeg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-10",
+        "titulo": "Ratatouille",
+        "valor": false,
+        "foto": "fotos/ratatoulle.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-11",
+        "titulo": "Coco",
+        "valor": false,
+        "foto": "fotos/coco.jpeg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-16-12",
+        "titulo": "Frozen",
+        "valor": true,
+        "foto": "fotos/frozen.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "17",
+    "titulo": "Pokemon tipo agua",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-17-1",
+        "titulo": "Bulbasur",
+        "valor": true,
+        "foto": "fotos/Bulbasur.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-2",
+        "titulo": "Squirtle",
+        "valor": false,
+        "foto": "fotos/squirtle.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-3",
+        "titulo": "Tangela",
+        "valor": true,
+        "foto": "fotos/Tangela.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-4",
+        "titulo": "Magikarp",
+        "valor": false,
+        "foto": "fotos/magikarp.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-5",
+        "titulo": "Vaporeon",
+        "valor": false,
+        "foto": "fotos/vaporeon.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-6",
+        "titulo": "Lapras",
+        "valor": false,
+        "foto": "fotos/lapras.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-7",
+        "titulo": "kyogre",
+        "valor": false,
+        "foto": "fotos/kyogre.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-8",
+        "titulo": "Politoed",
+        "valor": false,
+        "foto": "fotos/politoed.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-9",
+        "titulo": "Kingler",
+        "valor": false,
+        "foto": "fotos/kingler.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-10",
+        "titulo": "Milotic",
+        "valor": false,
+        "foto": "fotos/milotic.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-11",
+        "titulo": "Bagon",
+        "valor": true,
+        "foto": "fotos/BAgon.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-17-12",
+        "titulo": "Dratini",
+        "valor": true,
+        "foto": "fotos/dratini.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "18",
+    "titulo": "Personajes de starwars",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-18-1",
+        "titulo": "Chewbacca",
+        "valor": false,
+        "foto": "fotos/chewbacca.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-2",
+        "titulo": "Ackbar",
+        "valor": false,
+        "foto": "fotos/ackbar.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-3",
+        "titulo": "Prey",
+        "valor": true,
+        "foto": "fotos/PREY.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-4",
+        "titulo": "Bib Fortuna",
+        "valor": false,
+        "foto": "fotos/bib%20fortuna.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-5",
+        "titulo": "Mace Windu",
+        "valor": false,
+        "foto": "fotos/mace.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-6",
+        "titulo": "Nyota Uhura",
+        "valor": true,
+        "foto": "fotos/uhura.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-7",
+        "titulo": "Wicket",
+        "valor": false,
+        "foto": "fotos/wicket.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-8",
+        "titulo": "Worf",
+        "valor": true,
+        "foto": "fotos/worf.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-9",
+        "titulo": "Moff Tarkin",
+        "valor": false,
+        "foto": "fotos/moff%20tarking.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-10",
+        "titulo": "Mantis",
+        "valor": true,
+        "foto": "fotos/mantis.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-11",
+        "titulo": "Grogu",
+        "valor": false,
+        "foto": "fotos/grogu.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-18-12",
+        "titulo": "Salacious Crumb",
+        "valor": false,
+        "foto": "fotos/Salacious.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "19",
+    "titulo": "Inventor e invento",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-19-1",
+        "titulo": "Thomas Alva Edison - Corriente Alterna",
+        "valor": true,
+        "foto": "fotos/corriente.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-2",
+        "titulo": "Nikola Tesla - Luz",
+        "valor": true,
+        "foto": "fotos/luz.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-3",
+        "titulo": "Manuel Jalón - Fregona",
+        "valor": false,
+        "foto": "fotos/fregona.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-4",
+        "titulo": "Narcis Mounturiol - Submarino",
+        "valor": false,
+        "foto": "fotos/submarino.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-5",
+        "titulo": "Alexander Graham Bell - Telégrafo",
+        "valor": true,
+        "foto": "fotos/telegrafo.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-6",
+        "titulo": "Gabriel Fallopius - Condón",
+        "valor": false,
+        "foto": "fotos/condon.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-7",
+        "titulo": "Enric Bernat - Chupa Chups",
+        "valor": false,
+        "foto": "fotos/chupachups.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-8",
+        "titulo": "Samuel Finley Breese Morse - Código Morse",
+        "valor": false,
+        "foto": "fotos/morse.jpeg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-9",
+        "titulo": "Rudolf Diesel - Motor diesel.",
+        "valor": false,
+        "foto": "fotos/motor.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-10",
+        "titulo": "Bnjamin Franklin - Pararrayos",
+        "valor": false,
+        "foto": "fotos/pararrayos.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-11",
+        "titulo": "Hermanos Wright - Tren de vapor",
+        "valor": true,
+        "foto": "fotos/tren.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-19-12",
+        "titulo": "Ajay Bhatt - USB",
+        "valor": false,
+        "foto": "fotos/USB.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "20",
+    "titulo": "Entre las 10 películas más taquilleras de la historia",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-20-1",
+        "titulo": "Jurasic World",
+        "valor": false,
+        "foto": "fotos/JURASSIC.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-2",
+        "titulo": "Del revés 2",
+        "valor": false,
+        "foto": "fotos/DELREVES.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-3",
+        "titulo": "Vengadores: Infinity War",
+        "valor": false,
+        "foto": "fotos/VENGADORES.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-4",
+        "titulo": "Top gun: Maverick",
+        "valor": true,
+        "foto": "fotos/TOPGUN.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-5",
+        "titulo": "Star Wars: La amenaza fantasma",
+        "valor": true,
+        "foto": "fotos/AMENAZA.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-6",
+        "titulo": "Titanic",
+        "valor": false,
+        "foto": "fotos/titanic.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-7",
+        "titulo": "Spiderman: No Way Home",
+        "valor": false,
+        "foto": "fotos/spiderman.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-8",
+        "titulo": "Star Wars: El despertar de la fuerza",
+        "valor": false,
+        "foto": "fotos/Despertar.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-9",
+        "titulo": "Frozen 2",
+        "valor": true,
+        "foto": "fotos/frozen.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-10",
+        "titulo": "Harry potter y la piedra filosofal",
+        "valor": true,
+        "foto": "fotos/harry.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-11",
+        "titulo": "Vengadores: Endgame",
+        "valor": false,
+        "foto": "fotos/vengadores%202.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-20-12",
+        "titulo": "Avatar",
+        "valor": false,
+        "foto": "fotos/avatar.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "21",
+    "titulo": "Como decir \"Te amo\" en todo el mundo",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-21-1",
+        "titulo": "Jeg slikker deg - Noruego",
+        "valor": true,
+        "foto": "fotos/CORAZON5.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-2",
+        "titulo": "Aloha wau iāʻoe - Hawaiano",
+        "valor": false,
+        "foto": "fotos/CORAZON4.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-3",
+        "titulo": "Kocham cię - Polaco",
+        "valor": false,
+        "foto": "fotos/CORAZON3.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-4",
+        "titulo": "Eu te amo - Portugués",
+        "valor": false,
+        "foto": "fotos/CORAZON2.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-5",
+        "titulo": "Quérote - Gallego",
+        "valor": false,
+        "foto": "fotos/CORAZON%201.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-6",
+        "titulo": "ich hasse dich - Alemán",
+        "valor": true,
+        "foto": "fotos/CORAZON6.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-7",
+        "titulo": "Kuyaykim - Quechua",
+        "valor": false,
+        "foto": "fotos/CORAZON7.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-8",
+        "titulo": "Je t'aime - Francés",
+        "valor": false,
+        "foto": "fotos/CORAZON8.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-9",
+        "titulo": "Ti amo - Italiano",
+        "valor": false,
+        "foto": "fotos/CORAZON9.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-10",
+        "titulo": "Jeg hader dig - Danés",
+        "valor": true,
+        "foto": "fotos/CORAZON10.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-11",
+        "titulo": "nenávidím tě - Checo",
+        "valor": true,
+        "foto": "fotos/CORAZON11.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-21-12",
+        "titulo": "téstimo - Catalán",
+        "valor": false,
+        "foto": "fotos/CORAZON12.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "22",
+    "titulo": "País y su moneda",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-22-1",
+        "titulo": "Libra estrelina - Reino Unido",
+        "valor": false,
+        "foto": "fotos/REINO%20UNIDO.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-2",
+        "titulo": "Yuan - Japon",
+        "valor": true,
+        "foto": "fotos/JAPON.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-3",
+        "titulo": "Dolar canadiense - Canadá",
+        "valor": false,
+        "foto": "fotos/CANADA.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-4",
+        "titulo": "Real Brasileño - Brasil",
+        "valor": false,
+        "foto": "fotos/BRASIL.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-5",
+        "titulo": "Yen - China",
+        "valor": true,
+        "foto": "fotos/CHINA%20NINJA.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-6",
+        "titulo": "Rupia India - India",
+        "valor": false,
+        "foto": "fotos/INDIA.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-7",
+        "titulo": "Dinar Kuwaití- Kuwait",
+        "valor": false,
+        "foto": "fotos/KWAIT.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-8",
+        "titulo": "Euro - Guadalupe",
+        "valor": false,
+        "foto": "fotos/GUADALUPE.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-9",
+        "titulo": "Franco CFP - Polinesia Francesa",
+        "valor": false,
+        "foto": "fotos/POLINESIA.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-10",
+        "titulo": "Rupia - Rusia",
+        "valor": true,
+        "foto": "fotos/RUSIA.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-11",
+        "titulo": "Peso Cubano - Cuba",
+        "valor": false,
+        "foto": "fotos/CUBA.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-22-12",
+        "titulo": "Escudo Modavo - Moldavia",
+        "valor": true,
+        "foto": "fotos/MOLDAVIA.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "23",
+    "titulo": "Personaje y Anime",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-23-1",
+        "titulo": "Edwarner - Full Metal Alchemist",
+        "valor": true,
+        "foto": "fotos/full.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-2",
+        "titulo": "Natsu - No hero Academy",
+        "valor": true,
+        "foto": "fotos/deku%20no%20hero.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-3",
+        "titulo": "Hyoga - Caballeros del Zodiaco",
+        "valor": false,
+        "foto": "fotos/hyoga.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-4",
+        "titulo": "Ichigo - Bleach",
+        "valor": false,
+        "foto": "fotos/ichigo.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-5",
+        "titulo": "Mark Lenders - Oliver y Benji",
+        "valor": false,
+        "foto": "fotos/mark%20lenders.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-6",
+        "titulo": "Deku - Fairy Tail",
+        "valor": true,
+        "foto": "fotos/natsu%20firy%20tail.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-7",
+        "titulo": "Nobita - Doraemon",
+        "valor": false,
+        "foto": "fotos/nobita.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-8",
+        "titulo": "Saitama - Death Note",
+        "valor": true,
+        "foto": "fotos/saitama.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-9",
+        "titulo": "Sasuke - Naruto",
+        "valor": false,
+        "foto": "fotos/saske.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-10",
+        "titulo": "Satan - Dragon ball",
+        "valor": false,
+        "foto": "fotos/satan.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-11",
+        "titulo": "Choper - One piece",
+        "valor": false,
+        "foto": "fotos/choper.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-23-12",
+        "titulo": "Team Rocket - Pokemon",
+        "valor": false,
+        "foto": "fotos/team%20rocket.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "24",
+    "titulo": "Curiosidades sobre Cuatrovientos",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-24-1",
+        "titulo": "Llegó a tener más de 1000 alumnos/as en un curso",
+        "valor": false,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "e9e9e9e9-e9e9-4e9e-8e9e-e9e9e9e9e9e9",
-        "titulo": "México",
+        "idRespuesta": "mdb-24-2",
+        "titulo": "Fue una fábrica de maquinaria industrial",
         "valor": true,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "f1f1f1f1-f1f1-4f1f-8f1f-f1f1f1f1f1f1",
-        "titulo": "España",
+        "idRespuesta": "mdb-24-3",
+        "titulo": "Perteneció a los Hermanos Fernandez & Cía.",
         "valor": true,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "f2f2f2f2-f2f2-4f2f-8f2f-f2f2f2f2f2f2",
-        "titulo": "Canadá",
+        "idRespuesta": "mdb-24-4",
+        "titulo": "La palmera de la avenida Sanjorge le pertenecía",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-24-5",
+        "titulo": "Tiene 3 fuentes con cabeza de león",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-24-6",
+        "titulo": "Se fusionaron 4 academias de enseñanza locales en su creación",
         "valor": true,
         "foto": "Sin foto",
         "seleccionada": false
       },
       {
-        "idRespuesta": "f3f3f3f3-f3f3-4f3f-8f3f-f3f3f3f3f3f3",
-        "titulo": "Nigeria",
+        "idRespuesta": "mdb-24-7",
+        "titulo": "Tenía cafetería propia con tirador de cerveza",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-24-8",
+        "titulo": "Había taquillas en las galerías para el alumnado",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-24-9",
+        "titulo": "Dos Farolas iluminan una galería",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-24-10",
+        "titulo": "El equipo de fútbol de profes era la Brújula Mecánica",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-24-11",
+        "titulo": "Fue la primera cooperativa de enseñanza de Navarra",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-24-12",
+        "titulo": "Su nombre original era Instituto Politécnico Comercial Cuatrovientos",
         "valor": true,
         "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "86",
+    "titulo": "Localidad y Río",
+    "Habilitado": true,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-86-1",
+        "titulo": "Estella - Ega",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-2",
+        "titulo": "Olite - Arga",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-3",
+        "titulo": "Noain - Elorz",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-4",
+        "titulo": "Burgui - Urrobi",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-5",
+        "titulo": "Puente la Reina/Gares - Arga",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-6",
+        "titulo": "Sangüesa - Aragón",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-7",
+        "titulo": "Etxarri Aranatz - Eska",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-8",
+        "titulo": "Ribaforada - Ebro",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-9",
+        "titulo": "Elizondo - Baztan",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-10",
+        "titulo": "Berbinzana - Arga",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-11",
+        "titulo": "Tudela - Queiles",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-86-12",
+        "titulo": "Añorbe - Robo",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "104",
+    "titulo": "Record Guinness reales",
+    "Habilitado": true,
+    "foto": "fotos/b-q3PfLJ_400x400.jpeg",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-104-1",
+        "titulo": "Mayor distancia recorrida sujetando  una mesa con los dientes\t",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-2",
+        "titulo": "Corredor más rápido disfrazado de fruta\t",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-3",
+        "titulo": "Mayor número de de gente disfrazada de pitufo\t",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-4",
+        "titulo": "Mayor colección de carteles de \"no molestar\"\t",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-5",
+        "titulo": "Más cantidad de gasolina bebida por una persona sin morir\t",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-6",
+        "titulo": "Mayor tiempo enterrado en nieve\t",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-7",
+        "titulo": "Mayor distancia recorrida de una persona arrastrada y ardiendo\t",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-8",
+        "titulo": "Casa más grande construida con huesos de aceituna\t",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-9",
+        "titulo": "Paseo en bici a mayor profundidad marina\t",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-10",
+        "titulo": "Mayor tiempo alimentandote solo de pasas\t",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-11",
+        "titulo": "Mayor número de personas montadas en un monociclo\t",
+        "valor": true,
+        "foto": "Sin foto",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-104-12",
+        "titulo": "Lanzamiento de leche con el lacrimal\t",
+        "valor": false,
+        "foto": "Sin foto",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "105",
+    "titulo": "Personajes de... ¿MARVEL o DC?",
+    "Habilitado": true,
+    "foto": "fotos/portada-big-bang-theory.jpg",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-105-1",
+        "titulo": "JOKER - DC",
+        "valor": false,
+        "foto": "fotos/JOKER.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-2",
+        "titulo": "GROOT - MARVEL",
+        "valor": false,
+        "foto": "fotos/GROOT.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-3",
+        "titulo": "FLASH - MARVEL",
+        "valor": true,
+        "foto": "fotos/FLASH.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-4",
+        "titulo": "IRONMAN - MARVEL",
+        "valor": false,
+        "foto": "fotos/IRONMAN.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-5",
+        "titulo": "GREEN LANTERN - DC",
+        "valor": false,
+        "foto": "fotos/GREEN%20LANTERN.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-6",
+        "titulo": "WONDERWOMAN - DC",
+        "valor": false,
+        "foto": "fotos/WONDERWOMAN.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-7",
+        "titulo": "CAPITAN AMERICA - MARVEL",
+        "valor": false,
+        "foto": "fotos/CAPITAN.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-8",
+        "titulo": "LOBEZNO - DC",
+        "valor": true,
+        "foto": "fotos/LOBEZNO.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-9",
+        "titulo": "AVISPA - MARVEL",
+        "valor": false,
+        "foto": "fotos/AVISPA.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-10",
+        "titulo": "AQUAMAN - MARVEL",
+        "valor": true,
+        "foto": "fotos/AQUAMAN.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-11",
+        "titulo": "THOR - MARVEL",
+        "valor": false,
+        "foto": "fotos/THOR.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-105-12",
+        "titulo": "DEATHPOOL - DC",
+        "valor": true,
+        "foto": "fotos/DEATHPOOL.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "107",
+    "titulo": "Comida típica y CCAA",
+    "Habilitado": false,
+    "foto": "Sin foto",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-107-1",
+        "titulo": "MURCIA MIGAS\t",
+        "valor": true,
+        "foto": "fotos/migas.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-2",
+        "titulo": "EUSKADI BACALAO PIL-PIL\t",
+        "valor": false,
+        "foto": "fotos/bacalaopil.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-3",
+        "titulo": "NAVARRA TXISTORRA\t",
+        "valor": false,
+        "foto": "fotos/chistorra.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-4",
+        "titulo": "GALICIA PULPO\t",
+        "valor": false,
+        "foto": "fotos/pulpo.jpeg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-5",
+        "titulo": "CANARIAS MOJO PICÓN\t",
+        "valor": false,
+        "foto": "fotos/mojo.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-6",
+        "titulo": "ASTURIAS FABADA\t",
+        "valor": false,
+        "foto": "fotos/fabada.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-7",
+        "titulo": "VALENCIA PAELLA\t",
+        "valor": false,
+        "foto": "fotos/paella.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-8",
+        "titulo": "MADRID COCIDO MONTAÑÉS \t",
+        "valor": true,
+        "foto": "fotos/cocido.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-9",
+        "titulo": "C. LA MANCHA LECHAZO\t",
+        "valor": true,
+        "foto": "fotos/lechazo.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-10",
+        "titulo": "C. LEÓN PISTO\t",
+        "valor": true,
+        "foto": "fotos/pisto.jpeg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-11",
+        "titulo": "BALEARES ENSAIMADA\t",
+        "valor": false,
+        "foto": "fotos/ensaimada.jpeg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-107-12",
+        "titulo": "CATALUNYA PAN TUMACA\t",
+        "valor": false,
+        "foto": "fotos/pantumaca.jpg",
+        "seleccionada": false
+      }
+    ]
+  },
+  {
+    "idPregunta": "108",
+    "titulo": "Actores y Actrices con Oscar",
+    "Habilitado": true,
+    "foto": "fotos/oscar.jpg",
+    "respuestas": [
+      {
+        "idRespuesta": "mdb-108-1",
+        "titulo": "Will Smith\t",
+        "valor": false,
+        "foto": "fotos/WILL.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-2",
+        "titulo": "Leonardo Dicarpio\t",
+        "valor": false,
+        "foto": "fotos/DICAPRIO.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-3",
+        "titulo": "Jack Nicholson\t",
+        "valor": false,
+        "foto": "fotos/jack-nicholson.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-4",
+        "titulo": "Sean Penn\t",
+        "valor": false,
+        "foto": "fotos/sean%20penn.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-5",
+        "titulo": "Sigourney Weaver\t",
+        "valor": true,
+        "foto": "fotos/WEAVER.jfif",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-6",
+        "titulo": "Natalie Portman\t",
+        "valor": false,
+        "foto": "fotos/natalie.jfif",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-7",
+        "titulo": "Cher\t",
+        "valor": false,
+        "foto": "fotos/cher.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-8",
+        "titulo": "Gleen Close\t",
+        "valor": true,
+        "foto": "fotos/gleen%20close.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-9",
+        "titulo": "Meryl Streep\t",
+        "valor": false,
+        "foto": "fotos/meryl%20streep.jpeg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-10",
+        "titulo": "John Malkovich\t",
+        "valor": true,
+        "foto": "fotos/john%20malcovich.jpg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-11",
+        "titulo": "Willem Dafoe\t",
+        "valor": true,
+        "foto": "fotos/Willem%20Dafoe.jpeg",
+        "seleccionada": false
+      },
+      {
+        "idRespuesta": "mdb-108-12",
+        "titulo": "Hilary Swank\t",
+        "valor": false,
+        "foto": "fotos/Hilary%20Swank.jpg",
         "seleccionada": false
       }
     ]

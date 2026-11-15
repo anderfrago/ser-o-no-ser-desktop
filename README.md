@@ -2,6 +2,38 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
 
+## Questions from Access
+
+The question bank is imported from `../seronoser.mdb`: 29 questions and 348
+answers. `questions.json` is the development app's working copy; `api/data.js`
+contains the same data as the default for fresh installations.
+
+To repeat the import on Windows, close the app and run from this directory:
+
+```powershell
+./scripts/import-access-questions.ps1
+# Or specify another database:
+./scripts/import-access-questions.ps1 -DatabasePath C:\path\seronoser.mdb
+```
+
+This replaces both question banks, including any local question edits. Microsoft
+Access itself is not required; the script uses the Microsoft Access ODBC driver
+(already available on the machine used for this import).
+
+Question IDs retain the source IDs as strings. Answer IDs combine the question
+and answer IDs because the source answer numbers repeat for each question.
+Text, enabled flags, and answer flags are preserved (`valor: false` means correct).
+Selection state is reset, and `Sin Foto` is normalized to the app's `Sin foto`.
+Photos are bundled in `public/fotos` and imported as relative `fotos/` URLs,
+with filenames URL-encoded for spaces and special characters. Angular copies
+this folder into the build, which is also included in the Electron package.
+All 195 distinct photos referenced by the imported questions are included.
+
+An existing packaged installation loads its saved `questions.json` beside the
+executable instead of the bundled defaults. To update that installation, close
+the app, back up that saved file, and replace it with this repository's imported
+`questions.json`.
+
 ## Development server
 
 To start a local development server, run:

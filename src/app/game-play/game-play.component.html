@@ -32,25 +32,25 @@
             [ngClass]="{ 'bg-info': team.name === gameState.teams[gameState.currentTurn].name }">{{ team.puntosPanel }}
             points</span>
         </div>
-        <button class="btn btn-sm btn-outline-primary ms-3" (click)="viewScores()">View Scores</button>
+        <button class="btn btn-sm btn-outline-primary" (click)="viewScores()">View Scores</button>
       </div>
 
       <div class="current-question" *ngIf="gameState.currentQuestion">
-        <h3>Current Question</h3>
         <div class="question-card">
+          <div class="question-heading">
           <div *ngIf="gameState.currentQuestion.foto != 'Sin foto'">
             <img [src]="gameState.currentQuestion.foto" alt="Question Image" class="question-image">
           </div>
 
           <p class="question-title">{{ gameState.currentQuestion.titulo }}</p>
+          </div>
 
-          <h4>Answers:</h4>
           <div class="answers-list">
             <div *ngFor="let answer of gameState.currentQuestion.respuestas" class="answer-item"
               [class.selected]="selectedAnswerId === answer.idRespuesta"
               [ngClass]="{ 'bg-danger': answer.seleccionada && answer.valor, 'bg-success': answer.seleccionada && !answer.valor }"
               (click)="selectAnswer(answer.idRespuesta)">
-              {{ answer.titulo }}
+              <span class="answer-title">{{ answer.titulo }}</span>
               <div *ngIf="answer.foto != 'Sin foto'">
                 <img [src]="answer.foto" alt="Question Image" class="answer-image">
               </div>

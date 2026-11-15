@@ -1,19 +1,19 @@
-<header contentEditable>
-  <div class="d-flex  my-0">
+<header>
+  <div class="brand">
     <img class=" img-fluid" src="logo-cuatrovientosci-transparence.png" alt="logo-cuatrovientosci">
   </div>
-  <nav class="my-0 d-flex justify-content-end bg-primary">
-    <a class="mx-2 my-0 text-white" routerLink="/game-setup">Game</a>
-    <a class="mx-2 my-0 text-white" routerLink="/management">Management</a>
+  <nav class="bg-primary">
+    <a class="text-white" routerLink="/game-setup">Game</a>
+    <a class="text-white" routerLink="/management">Management</a>
   </nav>
 
 </header>
 
-<main contentEditable>
+<main>
   <router-outlet />
 </main>
 
 
-<footer contentEditable class="fixed-bottom">
+<footer>
   <p>© {{ year }} Cuatrovientos CI</p>
 </footer>
