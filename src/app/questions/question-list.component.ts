@@ -25,7 +25,7 @@ export class QuestionListComponent implements OnInit {
       },
       error: (err) => {
         console.error('Error fetching questions', err);
-        this.error = 'Failed to load questions. Please try again later.';
+        this.error = 'No se han podido cargar las preguntas. Inténtalo más tarde.';
         this.loading = false;
       }
     });

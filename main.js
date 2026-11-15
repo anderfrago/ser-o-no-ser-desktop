@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
 const path = require('path');
 const url = require('url');
 const { fork } = require('child_process');
@@ -41,6 +41,26 @@ function createWindow() {
 }
 
 app.on('ready', () => {
+  Menu.setApplicationMenu(Menu.buildFromTemplate([
+    { label: 'Archivo', submenu: [{ role: 'quit', label: 'Salir' }] },
+    { label: 'Editar', submenu: [
+      { role: 'undo', label: 'Deshacer' }, { role: 'redo', label: 'Rehacer' },
+      { type: 'separator' },
+      { role: 'cut', label: 'Cortar' }, { role: 'copy', label: 'Copiar' },
+      { role: 'paste', label: 'Pegar' }, { role: 'selectAll', label: 'Seleccionar todo' }
+    ] },
+    { label: 'Ver', submenu: [
+      { role: 'reload', label: 'Recargar' },
+      { role: 'toggleDevTools', label: 'Herramientas de desarrollo' },
+      { type: 'separator' },
+      { role: 'resetZoom', label: 'Tamaño real' },
+      { role: 'zoomIn', label: 'Ampliar' }, { role: 'zoomOut', label: 'Reducir' },
+      { role: 'togglefullscreen', label: 'Pantalla completa' }
+    ] },
+    { label: 'Ventana', submenu: [
+      { role: 'minimize', label: 'Minimizar' }, { role: 'close', label: 'Cerrar' }
+    ] }
+  ]));
   const DATA_STORAGE_PATH = app.isPackaged
     ? path.dirname(app.getPath('exe'))
     : __dirname;

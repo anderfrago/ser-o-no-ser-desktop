@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 @use "bootstrap/scss/bootstrap" with (
-    $primary: #0f4183
+    $primary: #0f3f7f,
+    $font-family-sans-serif: ('Segoe UI', sans-serif),
+    $body-bg: #ffffff
 );
+
+html { font-size: 14px; }
 
 body {
     font-family: 'Segoe UI', sans-serif;

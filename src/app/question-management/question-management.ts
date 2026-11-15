@@ -135,7 +135,7 @@ export class QuestionManagement implements OnInit {
   }
 
   deleteQuestion(id: string) { // Changed to string
-    if (confirm('Are you sure you want to delete this question?')) {
+    if (confirm('¿Seguro que quieres eliminar esta pregunta?')) {
       this.questionAdminService.deleteQuestion(id).subscribe({
         next: () => {
           console.log('Question deleted successfully');
@@ -151,16 +151,16 @@ export class QuestionManagement implements OnInit {
 
   // Method to save all questions, as per original requirement
   saveAllQuestions(): void {
-    if (confirm('This will overwrite all questions on the server. Are you sure?')) {
+    if (confirm('Se sobrescribirán todas las preguntas guardadas. ¿Quieres continuar?')) {
       this.questionAdminService.saveAllQuestions(this.questions).subscribe({
         next: (res) => {
           console.log('All questions saved', res);
-          alert('All questions saved successfully!');
+          alert('Todas las preguntas se han guardado correctamente.');
           this.loadQuestions();
         },
         error: (err) => {
           console.error('Failed to save all questions', err);
-          alert('Failed to save all questions.');
+          alert('No se han podido guardar todas las preguntas.');
         }
       });
     }

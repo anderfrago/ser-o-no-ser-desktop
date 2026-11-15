@@ -31,7 +31,7 @@ export class GamePlayComponent implements OnInit {
     if (this.gameId) {
       this.fetchGameState();
     } else {
-      this.error = 'No game ID provided.';
+      this.error = 'No se ha indicado la partida.';
       this.loading.set(false);
     }
   }
@@ -51,7 +51,7 @@ export class GamePlayComponent implements OnInit {
       },
       error: (err) => {
         console.error('Error fetching game state', err);
-        this.error = 'Failed to load game state. Please try again.';
+        this.error = 'No se ha podido cargar la partida. Inténtalo de nuevo.';
         this.loading.set(false);
       }
     });
@@ -63,7 +63,7 @@ export class GamePlayComponent implements OnInit {
 
   submitAnswer(): void {
     if (!this.gameId || this.selectedAnswerId === null) {
-      this.error = 'Please select an answer.';
+      this.error = 'Selecciona una respuesta.';
       return;
     }
 
@@ -82,7 +82,7 @@ export class GamePlayComponent implements OnInit {
       })
       .catch(err => {
         console.error('Error submitting answer', err);
-        this.error = 'Failed to submit answer. Try again.';
+        this.error = 'No se ha podido enviar la respuesta. Inténtalo de nuevo.';
         this.isSubmitting.set(false);
       });
   }

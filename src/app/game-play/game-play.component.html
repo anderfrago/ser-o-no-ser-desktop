@@ -5,11 +5,11 @@
         <i class="bi bi-check-circle-fill true-icon"></i>
         <i class="bi bi-x-circle-fill false-icon"></i>
       </div>
-      <h2>Checking Answer...</h2>
+      <h2>Comprobando respuesta...</h2>
     </div>
   </div>
   <div *ngIf="loading()" class="loading-spinner">
-    Loading game..
+    Cargando partida...
   </div>
 
   <div *ngIf="error" class="error-message">
@@ -24,15 +24,15 @@
 
 
       <div class="teams-score">
-        <h3>Scores</h3>
+        <h3>Puntuaciones</h3>
         <div *ngFor="let team of gameState.teams" class="team-score-item" [style.border-left-color]="team.color"
           [ngClass]="{ 'bg-info': team.name === gameState.teams[gameState.currentTurn].name }">
           <span class="team-name">{{ team.name }}</span>
           <span class="team-points"
             [ngClass]="{ 'bg-info': team.name === gameState.teams[gameState.currentTurn].name }">{{ team.puntosPanel }}
-            points</span>
+            puntos</span>
         </div>
-        <button class="btn btn-sm btn-outline-primary" (click)="viewScores()">View Scores</button>
+        <button class="btn btn-sm btn-outline-primary" (click)="viewScores()">Ver puntuaciones</button>
       </div>
 
       <div class="current-question" *ngIf="gameState.currentQuestion">
@@ -40,12 +40,12 @@
           <div class="answers-list">
           <div class="question-heading">
           <div *ngIf="gameState.currentQuestion.foto != 'Sin foto'">
-            <img [src]="gameState.currentQuestion.foto" alt="Question Image" class="question-image">
+            <img [src]="gameState.currentQuestion.foto" alt="Imagen de la pregunta" class="question-image">
           </div>
 
           <p class="question-title">{{ gameState.currentQuestion.titulo }}</p>
           <button (click)="submitAnswer()" [disabled]="selectedAnswerId === null" class="submit-answer-button">
-            Submit Answer
+            Confirmar respuesta
           </button>
           </div>
 
@@ -55,7 +55,7 @@
               (click)="selectAnswer(answer.idRespuesta)">
               <span class="answer-title">{{ answer.titulo }}</span>
               <div *ngIf="answer.foto != 'Sin foto'">
-                <img [src]="answer.foto" alt="Question Image" class="answer-image">
+                <img [src]="answer.foto" alt="Imagen de la respuesta" class="answer-image">
               </div>
 
             </div>
@@ -65,14 +65,14 @@
       </div>
 
       <div class="game-info">
-        <p><strong>Mode:</strong> {{ gameState.mode | titlecase }}</p>
-        <p><strong>Turn:</strong> {{ gameState.teams[gameState.currentTurn].name }}</p>
+        <p><strong>Modo:</strong> {{ gameState.mode | titlecase }}</p>
+        <p><strong>Turno:</strong> {{ gameState.teams[gameState.currentTurn].name }}</p>
         <p><strong>Panel:</strong> {{ gameState.panelNumber }} / {{ gameState.totalPanels }}</p>
       </div>
     </div>
 
     <div *ngIf="!gameState.currentQuestion" class="no-question">
-      Waiting for the next question...
+      Esperando la siguiente pregunta...
     </div>
 
   </div>

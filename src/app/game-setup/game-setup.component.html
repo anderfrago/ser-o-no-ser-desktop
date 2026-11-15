@@ -1,38 +1,37 @@
 <div class="game-setup-container">
-  <h2>Game Setup</h2>
+  <h2>Configurar partida</h2>
 
   <form [formGroup]="gameSetupForm" (ngSubmit)="onSubmit()">
     <div formArrayName="teams">
-      <h3>Teams</h3>
+      <h3>Equipos</h3>
       <div *ngFor="let team of teams.controls; let i = index" [formGroupName]="i" class="team-group">
-        <h4>Team {{ i + 1 }}</h4>
+        <h4>Equipo {{ i + 1 }}</h4>
         <div class="form-field">
-          <label for="teamName-{{i}}">Team Name:</label>
-          <input id="teamName-{{i}}" type="text" formControlName="name" placeholder="Enter team name">
+          <label for="teamName-{{i}}">Nombre del equipo:</label>
+          <input id="teamName-{{i}}" type="text" formControlName="name" placeholder="Escribe el nombre del equipo">
           <div *ngIf="team.get('name')?.invalid && team.get('name')?.touched" class="error-message">
-            Team name is required.
+            El nombre del equipo es obligatorio.
           </div>
         </div>
         <div class="form-field">
-          <label for="teamColor-{{i}}">Team Color:</label>
+          <label for="teamColor-{{i}}">Color del equipo:</label>
           <input id="teamColor-{{i}}" type="color" formControlName="color">
         </div>
-        <button type="button" (click)="removeTeam(i)" *ngIf="teams.length > 1" class="remove-button">Remove
-          Team</button>
+        <button type="button" (click)="removeTeam(i)" *ngIf="teams.length > 1" class="remove-button">Eliminar equipo</button>
       </div>
-      <button type="button" (click)="addTeam()" class="add-button">Add Team</button>
+      <button type="button" (click)="addTeam()" class="add-button">Añadir equipo</button>
     </div>
 
     <div class="form-field game-mode-selection">
-      <label for="gameMode">Game Mode:</label>
+      <label for="gameMode">Modo de juego:</label>
       <select id="gameMode" formControlName="mode">
         <option *ngFor="let mode of gameModes" [value]="mode">{{ mode | titlecase }}</option>
       </select>
       <div *ngIf="gameSetupForm.get('mode')?.invalid && gameSetupForm.get('mode')?.touched" class="error-message">
-        Game mode is required.
+        El modo de juego es obligatorio.
       </div>
     </div>
 
-    <button type="submit" [disabled]="gameSetupForm.invalid" class="submit-button">Start Game</button>
+    <button type="submit" [disabled]="gameSetupForm.invalid" class="submit-button">Iniciar partida</button>
   </form>
 </div>

@@ -1,8 +1,8 @@
 <div class="question-list-container">
-  <h2>Question List</h2>
+  <h2>Lista de preguntas</h2>
 
   <div *ngIf="loading" class="loading-spinner">
-    Loading questions...
+    Cargando preguntas...
   </div>
 
   <div *ngIf="error" class="error-message">
@@ -13,12 +13,12 @@
     <li *ngFor="let question of questions" class="question-item">
       <h3>{{ question.titulo }}</h3>
       <p>ID: {{ question.idPregunta }}</p>
-      <p>Habilitado: {{ question.Habilitado ? 'Yes' : 'No' }}</p>
+      <p>Habilitado: {{ question.Habilitado ? 'Sí' : 'No' }}</p>
       <!-- Add more details as needed -->
     </li>
   </ul>
 
   <div *ngIf="!loading && !error && questions.length === 0" class="no-questions">
-    No questions found.
+    No se han encontrado preguntas.
   </div>
 </div>

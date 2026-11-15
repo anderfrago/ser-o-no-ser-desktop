@@ -1,6 +1,6 @@
 <div class="game-results-container">
   <div *ngIf="loading()" class="loading-spinner">
-    Loading game results...
+    Cargando resultados...
   </div>
 
   <div *ngIf="error" class="error-message">
@@ -8,27 +8,27 @@
   </div>
 
   <ng-container *ngIf="!loading() && !error && finalScores.length > 0">
-    <h2 *ngIf="!returnToGame">Game Over!</h2>
-    <h2 *ngIf="returnToGame">Current Scores</h2>
-    <h3>Mode: {{ gameMode | titlecase }}</h3>
+    <h2 *ngIf="!returnToGame">¡Partida finalizada!</h2>
+    <h2 *ngIf="returnToGame">Puntuaciones actuales</h2>
+    <h3>Modo: {{ gameMode | titlecase }}</h3>
 
     <div class="final-scores">
-      <h4>Final Scores</h4>
+      <h4>Puntuaciones finales</h4>
       <div *ngFor="let team of finalScores; let i = index" class="team-score-item"
         [style.border-left-color]="team.color">
         <span class="rank">{{ i + 1 }}.</span>
         <span class="team-name">{{ team.name }}</span>
-        <span class="team-points">{{ team.puntos }} points</span>
+        <span class="team-points">{{ team.puntos }} puntos</span>
       </div>
     </div>
 
     <div class="actions">
-      <button *ngIf="returnToGame" class="back-to-game-button" (click)="goBackToGame()">Back to Game</button>
-      <button class="main-menu-button" (click)="goToGameSetup()">Play Again</button>
+      <button *ngIf="returnToGame" class="back-to-game-button" (click)="goBackToGame()">Volver a la partida</button>
+      <button class="main-menu-button" (click)="goToGameSetup()">Jugar de nuevo</button>
     </div>
   </ng-container>
 
-  <div *ngIf="!loading && !error && finalScores.length === 0" class="no-results">
-    No game results found for this ID.
+  <div *ngIf="!loading() && !error && finalScores.length === 0" class="no-results">
+    No se han encontrado resultados para esta partida.
   </div>
 </div>

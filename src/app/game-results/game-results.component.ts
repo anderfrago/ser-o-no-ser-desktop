@@ -30,7 +30,7 @@ export class GameResultsComponent implements OnInit {
     if (this.gameId) {
       this.fetchGameResults();
     } else {
-      this.error = 'No game ID provided to display results.';
+      this.error = 'No se ha indicado la partida para mostrar los resultados.';
       this.loading.set(false);
     }
 
@@ -52,7 +52,7 @@ export class GameResultsComponent implements OnInit {
       },
       error: (err) => {
         console.error('Error fetching game results', err);
-        this.error = 'Failed to load game results. Please try again.';
+        this.error = 'No se han podido cargar los resultados. Inténtalo de nuevo.';
         this.loading.set(false);
       }
     });
